@@ -71,7 +71,7 @@
 		7B0EA86F1E69EAEA00D77F1C /* VoiceTensorFlow */ = {
 			isa = PBXGroup;
 			children = (
-				EE5A8A5D1F6563AC004872C0 /* ml_comp */,
+				EE5A8A5D1F6563AC004872C0 /* VoicePredictionTF */,
 				7B0EA8731E69EAEA00D77F1C /* AppDelegate.h */,
 				7B0EA8741E69EAEA00D77F1C /* AppDelegate.m */,
 				7B0EA8761E69EAEA00D77F1C /* ViewController.h */,
@@ -102,14 +102,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE5A8A5D1F6563AC004872C0 /* ml_comp */ = {
+		EE5A8A5D1F6563AC004872C0 /* VoicePredictionTF */ = {
 			isa = PBXGroup;
 			children = (
 				EE5A8A5E1F656409004872C0 /* voice_predication.cpp */,
 				EE5A8A5F1F656409004872C0 /* voice_predication.hpp */,
 				EE5A8A611F662787004872C0 /* voice_data.h */,
 			);
-			name = ml_comp;
+			name = VoicePredictionTF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
