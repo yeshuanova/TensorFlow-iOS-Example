@@ -15,6 +15,7 @@
 		7B0EA8801E69EAEA00D77F1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0EA87E1E69EAEA00D77F1C /* LaunchScreen.storyboard */; };
 		7B0EA8891E69EDDF00D77F1C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0EA8881E69EDDF00D77F1C /* Accelerate.framework */; };
 		7B0EA88B1E69F32800D77F1C /* inference.pb in Resources */ = {isa = PBXBuildFile; fileRef = 7B0EA88A1E69F32800D77F1C /* inference.pb */; };
+		EE5A8A601F656409004872C0 /* voice_predication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE5A8A5E1F656409004872C0 /* voice_predication.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		7B0EA8811E69EAEA00D77F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B0EA8881E69EDDF00D77F1C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		7B0EA88A1E69F32800D77F1C /* inference.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = inference.pb; sourceTree = "<group>"; };
+		EE5A8A5E1F656409004872C0 /* voice_predication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = voice_predication.cpp; path = cpp/ml/voice_predication.cpp; sourceTree = "<group>"; };
+		EE5A8A5F1F656409004872C0 /* voice_predication.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = voice_predication.hpp; path = cpp/ml/voice_predication.hpp; sourceTree = "<group>"; };
+		EE5A8A611F662787004872C0 /* voice_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = voice_data.h; path = cpp/ml/voice_data.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		7B0EA86F1E69EAEA00D77F1C /* VoiceTensorFlow */ = {
 			isa = PBXGroup;
 			children = (
+				EE5A8A5D1F6563AC004872C0 /* ml_comp */,
 				7B0EA8731E69EAEA00D77F1C /* AppDelegate.h */,
 				7B0EA8741E69EAEA00D77F1C /* AppDelegate.m */,
 				7B0EA8761E69EAEA00D77F1C /* ViewController.h */,
@@ -95,6 +100,16 @@
 				7B0EA8881E69EDDF00D77F1C /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5A8A5D1F6563AC004872C0 /* ml_comp */ = {
+			isa = PBXGroup;
+			children = (
+				EE5A8A5E1F656409004872C0 /* voice_predication.cpp */,
+				EE5A8A5F1F656409004872C0 /* voice_predication.hpp */,
+				EE5A8A611F662787004872C0 /* voice_data.h */,
+			);
+			name = ml_comp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +188,7 @@
 				7B0EA8781E69EAEA00D77F1C /* ViewController.mm in Sources */,
 				7B0EA8751E69EAEA00D77F1C /* AppDelegate.m in Sources */,
 				7B0EA8721E69EAEA00D77F1C /* main.m in Sources */,
+				EE5A8A601F656409004872C0 /* voice_predication.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

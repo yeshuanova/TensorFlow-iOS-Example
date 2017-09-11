@@ -1,11 +1,14 @@
+//
+//  voice_data.h
+//  VoiceTensorFlow
+//
+//  Created by LiCheng-Shiang on 11/09/2017.
+//  Copyright © 2017 Hollance. All rights reserved.
+//
 
-#import "ViewController.h"
+#ifndef voice_data_h
+#define voice_data_h
 
-#include "voice_predication.hpp"
-
-// I took these examples from the test set. To make this an app that is useful
-// in practice, you would need to add code that records audio and then extracts
-// the acoustic properties from the audio.
 static float maleExample[] = {
 	0.174272105181833,0.0694110453235828,0.190874106652007,0.115601979109401,
 	0.228279274326553,0.112677295217152,4.48503835015822,61.7649083141473,
@@ -22,25 +25,5 @@ static float femaleExample[] = {
 	0.2109375,15.234375,15.0234375,0.0389615584623385,
 };
 
-@implementation ViewController
-{
-	VoicePrediction vp;
-}
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
-
-	NSString *path = [[NSBundle mainBundle] pathForResource:@"inference" ofType:@"pb"];
-
-	if (vp.loadGraphFromPath(path.fileSystemRepresentation) && vp.createSession()) {
-		vp.predict(maleExample);
-		vp.predict(femaleExample);
-		
-		if (vp.closeSession()) {
-			NSLog(@"Close session ok");
-		}
-	}
-
-}
-
-@end
+#endif /* voice_data_h */
